@@ -4,6 +4,7 @@ import Option from "./Option";
 
 const Question = props => {
   const {index, qid, options, setOptions, questionText} = props;
+  // const [optionIndex, setOptionIndex] = React.useState(0);
 
   const optionList = [
     {optionIndex: 1, optionName: "Strongly Disagree"},

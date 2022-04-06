@@ -2,12 +2,13 @@ import './App.css';
 import Survey from "./Components/Survey";
 import React from "react";
 import axios from "axios";
+import {URL} from "./constants/constants";
 
 function App(props) {
   const handleDownloadCSV = () => {
     axios({
       method: 'get',
-      url: 'http://localhost:3000/entries',
+      url: `${URL}/entries`,
     }).then(data => {
       console.log(data);
       const encodedUri = encodeURI(data.data);
